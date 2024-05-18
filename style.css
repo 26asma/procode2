@@ -1,0 +1,786 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Nunito', sans-serif;
+    box-sizing: border-box;
+}
+
+nav {
+    background: white;
+    height: 80px;
+    width: 100%;
+    
+}
+.navbar{
+    position: sticky;
+}
+
+label.logo {
+    color: #06BBCC;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+}
+
+nav ul {
+    position: relative;
+    top: 15px;
+    float: right;
+    
+
+}
+
+nav ul li {
+    display: inline-flex;
+    margin: 0 5px;
+
+}
+
+nav ul li a {
+    color: rgb(56, 55, 55);
+    font-size: 17px;
+    padding: 7px 13px;
+
+}
+.navbar .dropdown-toggle::after {
+    border: none;
+    content: "\f107";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    vertical-align: middle;
+    margin-left: 8px;
+}
+.navbar .nav-item .dropdown-menu {
+    display: block;
+    margin-top: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: .5s;
+}
+
+.navbar .dropdown-menu.fade-down {
+    top: 100%;
+    transform: rotateX(-75deg);
+    transform-origin: 0% 0%;
+}
+
+.navbar .nav-item:hover .dropdown-menu {
+    top: 100%;
+    transform: rotateX(0deg);
+    visibility: visible;
+    transition: .5s;
+    opacity: 1;
+    display: block;
+}
+.dropdown-menu.fade-down{
+    text-decoration: black;
+    background-color: white;
+    
+}
+.dropdown-item {
+    display: inline-block;
+    width: 100%;
+    padding: .25rem 1rem;
+    font-weight: 400;
+    color: #212529;
+    text-align: inherit;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 0;
+    position: relative;
+
+} 
+
+a:hover {
+    color:#06BBCC;
+    transition: .5s;
+}
+
+.checkbtn {
+    font-size: 30px;
+    color: rgb(25, 93, 110);
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+.navbar button {
+    padding: 15px;
+    color: white;
+    background-color: #06BBCC;
+    border: none;
+    width: 160px;
+    height: 60px;
+    text-transform: uppercase;
+
+}
+
+button {
+    padding: 15px;
+    color: white;
+    background-color: #06BBCC;
+    border: none;
+    width: 200px;
+    height: 60px;
+
+
+}
+
+button:hover{
+    color: #06BBCC;
+    background: white;
+    font-size: large;
+}
+
+
+.container {
+    background: url(assets/carousel-1.jpg) no-repeat;
+    background-size: cover;
+    height: calc(100vh - 80px);
+    
+
+
+}
+
+.color {
+
+    background: rgb(25 25 64 / 56%);
+    height: calc(100vh - 80px);
+}
+
+.content {
+    width: 50%;
+    height: 600px;
+    position: relative;
+    padding-right: 28px;
+    top: 200px;
+    left: 120px;
+    text-transform: capitalize;
+}
+
+.content h2 {
+    top: 50px;
+    color: #06BBCC;
+}
+
+.content h1 {
+    font-size: 55px;
+    font-weight: bolder;
+    color: white;
+}
+
+.content p {
+    bottom: 50px;
+    padding: 20px 0;
+    color: white;
+    font-weight: 600;
+    font-size: 17px;
+}
+
+.content button {
+    width: 160px;
+    height: 60px;
+    margin: 15px;
+    
+    
+}
+
+.box {
+    margin: 50px;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    color: rgb(44, 43, 43);
+
+
+}
+
+.box1 {
+    border: 2px solid rgb(193, 226, 240);
+    width: 250px;
+    height: 230px;
+    justify-content: center;
+    text-align: center;
+    background-color: rgba(193, 226, 240, 0.568);
+   
+
+}
+ .box1:hover{
+    transition: ease-in-out 1s;
+    background-color: #8edbee;
+    cursor: pointer;
+} 
+
+.box2 {
+    border: 2px solid rgba(193, 226, 240, 0.589);
+    width: 250px;
+    height: 230px;
+    justify-content: center;
+    text-align: center;
+
+    background-color: rgba(193, 226, 240, 0.589);
+}
+.box2:hover{
+    transition: ease-in-out 1s;
+    background-color: #8edbee;
+    cursor: pointer;
+}
+
+.box3 {
+    border: 2px solid rgb(193, 226, 240);
+    width: 250px;
+    height: 230px;
+    justify-content: center;
+    text-align: center;
+    background-color: rgba(193, 226, 240, 0.589);
+}
+.box3:hover{
+    transition: ease-in 2s;
+    background-color: #8edbee;
+    cursor: pointer;
+}
+.box4 {
+    border: 2px solid rgb(193, 226, 240);
+    width: 250px;
+    height: 230px;
+    justify-content: center;
+    text-align: center;
+
+    background-color: rgba(193, 226, 240, 0.589);
+}
+.box4:hover{
+    transition: ease-in-out 1s;
+    background-color: #8edbee;
+    cursor: pointer;
+}
+.box i {
+    color: #06BBCC;
+    padding: 15px;
+}
+.a{
+    display: flex;
+    gap: 80px;
+}
+
+
+.about {
+    padding: 20px; 
+    margin-bottom: 40px;
+    width: 100%;
+    display: flex;
+    gap: 20px;
+}
+
+.one {
+    /* float: left; */
+    /* position: relative; */
+    /* left: 50px; */
+    width: 450px;
+}
+
+.one img {
+    height: 450px;
+    width: 450px;
+}
+
+.two {
+    /* float: right; */
+    width: 60%;
+    /* position: relative;
+    left: 65px;
+    top: -40px;
+    padding: 40px; */
+}
+
+.two h5 {
+    font-size: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #06BBCC;
+}
+
+.two h2 {
+    position: relative;
+    top: 8px;
+    font-weight: 800;
+    font-size: 35px;
+    color: black;
+}
+
+.two p {
+    position: relative;
+    top: 25px;
+    color: rgb(44, 43, 43);
+    
+}
+
+.col {
+    display: flex;
+    gap: 20px;
+    position: relative;
+    top: 40px;
+}
+.course .co1 .btn button:hover{
+    font-size: 12px;
+}
+.course .co2 .btn button:hover{
+    font-size: 12px;
+}
+.course .co3 .btn button:hover{
+    font-size: 12px;
+}
+.points1 {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.points2 {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.two button{
+    position: relative;
+    top:90px ;
+}
+.col i{
+    color: #06BBCC;
+    font-size: medium;
+
+}
+.two button{
+    width: 160px;
+    height: 60px;
+}
+.head{
+    text-align: center;
+}
+.head h3{
+    color: #06BBCC;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+.head h1{
+    color: black;
+    font-weight: bolder;
+    text-transform: capitalize;
+}
+.cat{
+   width: 100%;
+   padding: 20px;
+   
+}
+.cate1{
+display: flex;
+gap: 30px;
+padding: 10px;
+}
+.cate2{
+    display: flex;
+    gap: 30px;
+padding: 10px;
+}
+.cat1 img{
+    height: 300px;
+    width: 400px;
+
+    
+}
+.cat2 img{
+    height: 300px;
+    width: 400px;
+}
+.cat3 img{
+    height: 300px;
+    width: 400px;
+}
+.cat4 img{
+    height: 300px;
+    width: 400px;
+}
+.cat5 img{
+    height: 300px;
+    width: 400px;
+}
+
+.cat6 img{
+    height: 300px;
+    width: 400px;
+}
+.cat h5{
+    position: relative;
+    top: -50px;
+    left: 70px;
+    color: black;
+    background: white;
+    font-size: xx-large;
+    width: 300px;
+    text-transform: capitalize;
+    text-align: center;
+}
+.headco{
+    text-align: center;
+    text-transform: capitalize;
+}
+.headco h3{
+    color: #06BBCC;
+    text-transform: uppercase;
+    
+    font-weight: bolder;
+}
+.headco h1{
+    font-weight: bolder;
+    font-size: 35px;
+}
+.course{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    padding: 30px;
+}
+
+.course .co1{
+    display: flex;
+    flex-direction: column;
+}
+.co1 img{
+    height: 250px;
+    width: 400px;
+}
+.co1 button{
+    display: flex;
+    flex-direction: row;
+    width: 100px;
+    height: 40px;
+    text-align: center;
+    text-transform: capitalize;
+    font-weight:bolder ;
+    
+}
+.btn{
+    width:350px ;
+    display: flex;
+    gap: 5px;
+    flex-direction: row;
+    position: relative;
+    top: -60px;
+    text-align: center;
+    justify-content: center;
+}
+.co1 .det1{
+    position: relative;
+    top: -40px;
+    height: 200px;
+    width: 400px;
+    background-color:rgba(193, 226, 240, 0.568); 
+    text-align: center;
+}
+.det1 h3{
+font-size: 30px;
+}
+.det1 i{
+color: #06BBCC;
+}
+ .bot{
+    display: flex;
+    gap: 80px;
+    flex-direction: row;
+    position: relative;
+    top: 25px;
+    
+}
+.bot i{
+    padding: 8px;
+    color: #06BBCC;
+}
+.course .co2{
+    display: flex;
+    flex-direction: column;
+}
+.co2 img{
+    height: 250px;
+    width: 400px;
+}
+.co2 button{
+    display: flex;
+    flex-direction: row;
+    width: 100px;
+    height: 40px;
+    text-align: center;
+    text-transform: capitalize;
+    font-weight:bolder ;
+    
+}
+
+.co2 .det2{
+    position: relative;
+    top: -40px;
+    height: 200px;
+    width: 400px;
+    background-color:rgba(193, 226, 240, 0.568); 
+    text-align: center;
+}
+.det2 h3{
+font-size: 30px;
+}
+.det2 i{
+color: #06BBCC;
+}
+ .bot2{
+    display: flex;
+    gap: 80px;
+    flex-direction: row;
+    position: relative;
+    top: 25px;
+    
+}
+.bot2 i{
+    padding: 8px;
+    color: #06BBCC;
+}
+.course .co3{
+    display: flex;
+    flex-direction: column;
+}
+.co3 img{
+    height: 250px;
+    width: 400px;
+}
+.co3 button{
+    display: flex;
+    flex-direction: row;
+    /* position: relative;
+    top: -50px; */
+    width: 100px;
+    height: 40px;
+    text-align: center;
+    text-transform: capitalize;
+    font-weight:bolder ;
+    
+}
+
+.co3 .det3{
+    position: relative;
+    top: -40px;
+    height: 200px;
+    width: 400px;
+    background-color:rgba(193, 226, 240, 0.568); 
+    text-align: center;
+}
+.det3 h3{
+font-size: 30px;
+}
+.det3 i{
+color: #06BBCC;
+}
+ .bot3{
+    display: flex;
+    gap: 80px;
+    flex-direction: row;
+    position: relative;
+    top: 25px;
+    
+}
+.bot3 i{
+    padding: 8px;
+    color: #06BBCC;
+}
+.title{
+    text-align: center;
+}
+.title h3{
+    text-transform: uppercase;
+    color: #06BBCC;
+    font-weight: bolder;
+}
+.title h1{
+    text-transform: capitalize;
+    font-size: 35px;
+    font-weight: bolder;
+}
+.instructor{
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin: 20px;
+    padding: 35px 0;
+}
+.per1 img{
+height: 250px;
+width: 250px;
+}
+.name{
+    height: 100px;
+    width: 250px;
+    background-color: rgba(193, 226, 240, 0.568);
+    position: relative;
+    top: -7px;
+    text-align: center;
+    text-transform: capitalize;
+}
+.flex{
+    flex-direction: column;
+    display: flex;
+}
+.instructor i{
+    color: #06BBCC;
+    justify-items:center;
+    padding: 8px 8px;
+    position: relative;
+}
+.testimonial{
+display: flex;
+flex-direction: row;
+gap: 10px;
+justify-content: center;
+} 
+.headte{
+    text-align: center;
+}
+.headte h3{
+    color: #06BBCC;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+.headte h1{
+    font-weight: bolder;
+    font-size: 40px;
+    text-transform: capitalize;
+}
+.feed{
+    display: flex;
+    flex-direction: column;
+}
+.stu{
+    height: 150px;
+    width: 300px;
+    padding: 45px 20px;
+    background: white;
+    justify-items: center;
+    text-align: center;
+
+}
+.stu img{
+    border-radius:40px ;
+    height: 50px;
+    width: 50px;
+
+}
+.com{
+    width: 300px;
+    height: 120px;
+    background: rgba(193, 226, 240, 0.568);
+   padding: 25px 10px;
+   margin: 20px 0;
+    text-align: center;
+}
+.footer{
+    display: flex;
+    gap: 30px;
+    font-size: 16x;
+padding: 50px;
+    background: #181d38;
+    margin-top: 80px;
+    color: white;
+}
+.row1{
+    
+
+width: 25%;
+display: flex;
+flex-direction: column;
+padding: 45px;
+}
+.row1 a{
+ text-decoration: none; 
+color: white;
+padding: 5px 0;
+
+}
+.row1 a::before{
+    position: relative;
+    content: "\f105";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    margin-right: 10px;
+}
+.footer h4{
+    padding: 8px;
+    text-transform: capitalize;
+    font-size: 25px;
+}
+.row2{
+    width: 25%;
+    padding: 40px 0;
+}
+.i i{
+    padding: 10px;
+}
+.logo i{
+    padding: 15px;
+}
+.i a{
+    padding-left: 10px;
+}
+
+.row3{
+    width: 25%;
+    padding: 40px 0;
+}
+/* .ga1 img{
+    height: 70px;
+    width: 70px;
+    border: 1px white;
+} */
+.row3 img{
+    height: 70px;
+    width: 70px;
+}
+.row4{
+    width: 30%;
+    padding: 40px ;
+}
+.row4 button{
+    height: 35px;
+    width:70px ;
+    text-align: center;
+    padding: 3px;
+    margin: 20px 0;
+}
+.row4 input{
+    height: 35px;
+    width: 150px;
+}
+
+.end{
+    border-top:  1px solid rgb(112, 111, 111);;
+    background-color: #181d38;
+    display: flex;
+    padding: 50px;
+    
+}
+.menu{
+    position: relative;
+    left:50%;   
+}
+.copy{
+    color: white;
+}
+.menu a{
+    text-decoration: none;
+    padding: 10px;
+    color: white;
+    border-right: 1px solid rgb(112, 111, 111);
+}
+
+

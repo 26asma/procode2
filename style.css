@@ -279,14 +279,12 @@ button:hover{
     width: 100%;
     display: flex;
     justify-content: center;
-    /* align-items: center; */
+   
     gap: 20px;
 }
 
 .one {
-    /* float: left; */
-    /* position: relative; */
-    /* left: 50px; */
+  
     width: 450px;
 }
 

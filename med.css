@@ -72,6 +72,9 @@ width: 100%;
         align-items: center;
         justify-content: center;
     }
+    .box p{
+        font-size: 1rem;
+    }
    .about .two{
     padding: 20px 0;
     margin-bottom: 50px;

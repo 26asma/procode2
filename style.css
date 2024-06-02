@@ -199,6 +199,7 @@ button:hover{
     display: flex;
     gap: 30px;
     justify-content: center;
+    align-items: center;
     color: rgb(44, 43, 43);
 
 
@@ -277,6 +278,8 @@ button:hover{
     margin-bottom: 40px;
     width: 100%;
     display: flex;
+    justify-content: center;
+    /* align-items: center; */
     gap: 20px;
 }
 
@@ -293,12 +296,9 @@ button:hover{
 }
 
 .two {
-    /* float: right; */
-    width: 60%;
-    /* position: relative;
-    left: 65px;
-    top: -40px;
-    padding: 40px; */
+  
+    width: 50%;
+  
 }
 
 .two h5 {
@@ -382,11 +382,15 @@ button:hover{
 }
 .cate1{
 display: flex;
+justify-content: center;
+align-items: center;
 gap: 30px;
 padding: 10px;
 }
 .cate2{
     display: flex;
+    justify-content: center;
+align-items: center;
     gap: 30px;
 padding: 10px;
 }
@@ -444,6 +448,8 @@ padding: 10px;
 }
 .course{
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: row;
     gap: 30px;
     padding: 30px;
@@ -559,8 +565,7 @@ color: #06BBCC;
 .co3 button{
     display: flex;
     flex-direction: row;
-    /* position: relative;
-    top: -50px; */
+ 
     width: 100px;
     height: 40px;
     text-align: center;
@@ -737,11 +742,7 @@ padding: 5px 0;
     width: 25%;
     padding: 40px 0;
 }
-/* .ga1 img{
-    height: 70px;
-    width: 70px;
-    border: 1px white;
-} */
+
 .row3 img{
     height: 70px;
     width: 70px;

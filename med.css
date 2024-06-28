@@ -1,4 +1,7 @@
 @media(max-width:380px){
+    .nav-logo{
+        padding:0;
+    }
     .footer{
         display: flex;
         flex-direction: column;
@@ -40,7 +43,7 @@
     }
 }
 @media (max-width: 490px) {
-    .container,.color,.nav-bar,.footer{
+    .container,.color,.footer{
         width: 100%;
         height: 100%;
     }
@@ -51,18 +54,8 @@
    
    
    
-    nav a{
-        display: none;
-    }
-    nav button{
-        display: none;
-    }
-    label.logo{
-        align-items: center;
-        width: 100%;
-        margin: 2px;
-        font-size:2.5rem;
-    }
+ 
+
     .content{
     
 padding: 0;
@@ -203,19 +196,51 @@ width: 100%;
 
 
 
-}   
-@media (max-width: 865px){
-    .container,.color,nav,.footer{
+}  
+@media screen and (max-width: 865px) {
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 60px; 
+      left: 0;
+      width: 100%;
+      background-color:white;
+      z-index: 1000;
+    }
+    .nav-toggle-label {
+        display: block;
+    }
+    .nav-toggle-label span{
+        display: block;
+    }
+  
+    .nav-links li {
+      text-align: center;
+      margin: 0;
+      width: 100%;
+    }
+  
+    .nav-links li a {
+      padding: 45px 20px;
+    }
+  
+    .nav-toggle:checked + .nav-toggle-label + .nav-links {
+      display: flex;
+      color: black;
+    }
+  .dropdown-content{
+    position: absolute;
+    left: 40%;
+  }
+  .dropdown-content li a{
+    padding: 0;
+  }
+    .container,.color,.footer{
         width: 100%;
     }
-    nav a{
-        display: none;
-    }
-    nav button{
-        position: relative;
-        top: -80px;
-    }
-    label.logo{
+
+    label.nav-logo{
         padding: 0;
         margin: none;
         font-size:1.5rem;
@@ -296,20 +321,16 @@ font-size: 1rem;
    }
 }
 @media (max-width: 920px) {
-    .container,.color,nav,.footer{
+    .container,.color,.footer{
         width: 100%;
     }
-    .navbar ul li a{
-        color: white;
-    }
+  
     label.logo{
         padding: 0;
         margin: none;
         font-size:2rem;
     }
-.nav-bar a{
-    padding: 0;
-}
+
     /* .content{
         
         padding:  0;
@@ -438,11 +459,7 @@ font-size: 1rem;
         }
        
       
-        label.logo{
-            padding: 0;
-            margin: none;
-            font-size:2rem;
-        }
+
       
        
                 .box{

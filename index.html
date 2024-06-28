@@ -22,33 +22,31 @@
 
 <body>
     <div class="wrapper">
-
-        <div class="navbar">
-
-            <nav>
-                <input type="checkbox" id="check">
-                <label for="check" class="checkbtn">
-                    <i class="fas fa-bars"></i></label>
-                <label class="logo"><i class="fa fa-book"></i>eLEARNING</label>
-                <ul>
-                    <li><a href="#home">HOME</a></li>
-                    <li><a href="#aboutus">ABOUT</a></li>
-                    <li><a href="#courses">COURSES</a></li>
-                    <li>
-                        <div class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">PAGES</a>
-                            <div class="dropdown-menu fade-down m-0">
-                                <a href="#team" class="dropdown-item">Our Team</a><br>
-                                <a href="testimonial.html" class="dropdown-item">Testimonial</a><br>
-                                <a href="404.html" class="dropdown-item">404 Page</a>
-                            </div>
-                    </li>
-                    <li><a href="#contact">CONTACT</a></li>
-                    <li><button>Join Now <i class="fas fa-arrow-right"></i></li></button>
-
-                </ul>
-            </nav>
-        </div>
+        <nav class="navbar">
+            <div class="nav-logo">
+              <i class="fa fa-book"></i>eLEARNING</label>
+            </div>
+            <input type="checkbox" id="nav-toggle" class="nav-toggle">
+            <label for="nav-toggle" class="nav-toggle-label">
+              <span></span>
+              <span></span>
+              <span></span>
+            </label>
+            <ul class="nav-links">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li class="dropdown">
+                <a href="#">Page</a>
+                <div class="dropdown-content">
+                  <a href="#">Page 1</a>
+                  <a href="#">Page 2</a>
+                  <a href="#">Page 3</a>
+                </div>
+              </li>
+              <li><a href="#">Contact</a></li>
+              <li class="join-button"><a href="#">Join Now</a></li>
+            </ul>
+          </nav>
         <div class="container" id="home">
             <div class="color">
                 <div class="content">
@@ -409,7 +407,7 @@
 
     </div>
 
-
+<script src="java.js"></script>
 
 </body>
 
